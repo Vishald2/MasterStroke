@@ -1,0 +1,129 @@
+/* style.css */
+
+/* Without it there will be small flicker in navbar */
+html {
+    scrollbar-gutter: stable;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529;
+    background-color: #ffffff;
+    margin: 0;                  /* 0 is enough, no need for 0px */
+}
+
+/* --- Navigation & Hover Effects --- */
+.navbar {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 700;
+    color: #495057 !important;
+    transition: color 0.3s ease-in-out;   /* was 'all' — only color changes here */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-item.active .nav-link {
+    color: #000000 !important;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.navbar {
+    border-bottom: 1px solid #eaeaea;
+    min-height: 100px;           /* adjust this value to your liking */
+}
+
+.navbar .container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* --- Dropdown --- */
+.dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.dropdown-menu .dropdown-item {
+    font-weight: 700;
+}
+
+.dropdown-item:hover {
+    background-color: #e9e6ec !important;
+}
+
+/* --- Reusable Utilities --- */
+.bg-light-gray {
+    background-color: #f8f9fa;
+}
+
+/* --- Card --- */
+.card-minimal {
+    border: 1px solid #eaeaea;
+    border-radius: 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-minimal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Button --- */
+.btn-primary-custom {
+    background-color: #212529;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary-custom:hover {
+    background-color: #000000;
+    /* 'color: #ffffff' removed — it never changes, no need to restate it */
+}
+
+/* --- Scrolling Images --- */
+.scroll-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.scroll-item {
+    flex: 0 0 auto;
+    width: 250px;
+    margin: 0 30px;
+}
+
+.scroll-item img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s;   /* was '0.3s' — property was missing, added 'opacity' */
+}
+
+.scroll-item img:hover {
+    opacity: 1;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }      /* 0%/100% → from/to is cleaner for 2-step animations */
+    to   { transform: translateX(-50%); }
+}
