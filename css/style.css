@@ -245,3 +245,116 @@ body {
 .icon-link:hover {
     color: #ffffff;
 }
+
+/* =====================================================
+   MOBILE OPTIMIZATION (READABILITY + SPACING)
+   Affects: Entire website on screens < 768px
+===================================================== */
+
+@media (max-width: 767px) {
+
+    /* ---------- 1. GLOBAL TYPOGRAPHY ---------- */
+
+    body {
+        font-size: 16px;          /* base readable size */
+        line-height: 1.6;         /* better readability */
+    }
+
+    h1, .display-5 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p, .lead {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 16px;
+    }
+
+
+    /* ---------- 2. CONTAINER & LAYOUT SPACING ---------- */
+
+    /* Reduce default Bootstrap side padding */
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    /* Reduce column internal spacing */
+    .row > [class*="col"] {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    /* Optional: reduce section side padding */
+    section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    /* ---------- 3. NAVBAR (OPTIONAL TIGHTENING) ---------- */
+
+    .navbar {
+        min-height: auto;  /* remove large desktop height */
+    }
+
+    .navbar .container {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+
+    /* ---------- 4. SUSTAIN CARD (YOUR IMAGE + TEXT SECTION) ---------- */
+
+    .sustain-card {
+        min-height: auto; /* remove fixed height */
+    }
+
+    .sustain-card img {
+        position: static !important;
+        height: 240px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .overlay {
+        display: none; /* remove overlay for mobile */
+    }
+
+    .sustain-card .d-flex {
+        background: #0e3d26;
+        padding: 20px 12px; /* reduce side spacing */
+    }
+
+
+    /* ---------- 5. SCROLLING STRIP (IMPROVE FIT) ---------- */
+
+    .scroll-item {
+        width: 180px;
+        margin: 0 15px;
+    }
+
+
+    /* ---------- 6. FOOTER IMPROVEMENT ---------- */
+
+    .footer {
+        font-size: 15px;
+    }
+
+    .footer .row > div {
+        margin-bottom: 20px;
+    }
+}
