@@ -12,8 +12,7 @@ body {
     margin: 0; /* Removes default browser margin */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #212529;           /* Default text color */
-   /* background-color: #ffffff;*/
-   background-color: blueviolet;
+    background-color: #ffffff;
 }
 
 
@@ -290,9 +289,8 @@ body {
 
     /* Reduce default Bootstrap side padding */
     .container {
-        padding-left: 4px !important;
-        padding-right: 4px !important;
-        background: yellow; /* visible debug */
+        padding-left: 6px !important;
+        padding-right: 6px !important;
     }
 
     /* Reduce column internal spacing */
