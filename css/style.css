@@ -70,7 +70,6 @@ body {
     background-color: #e9e6ec !important;
 }
 
-
 /* =====================================================
    4. UTILITY CLASSES
    Affects: Reusable styles across multiple sections
@@ -176,6 +175,7 @@ body {
     );
 }
 
+/* Media Queries */
 
 /* =====================================================
    9. RESPONSIVE (MOBILE ADJUSTMENTS)
