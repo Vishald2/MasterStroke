@@ -127,3 +127,65 @@ body {
     from { transform: translateX(0); }      /* 0%/100% → from/to is cleaner for 2-step animations */
     to   { transform: translateX(-50%); }
 }
+
+.sustain-card {
+    min-height: 420px;
+    }
+
+/* Overlay */
+.overlay {
+    background: linear-gradient(to right, rgba(0,0,0,0.65), rgba(0,0,0,0.1));
+}
+
+/* Mobile behavior */
+@media (max-width: 767px) {
+
+    .sustain-card img {
+        position: static !important;
+        height: 240px;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .sustain-card {
+        min-height: auto;
+    }
+
+    .sustain-card .d-flex {
+        background: #0e3d26;
+    }
+}
+
+/*Footer Section*/
+.footer {
+    font-size: 14px;
+}
+
+.footer-link {
+    color: #adb5bd;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+.footer-text {
+    color: #adb5bd;
+    margin-bottom: 6px;
+}
+
+.icon-link {
+    color: #adb5bd;
+    margin-right: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    color: #ffffff;
+}
