@@ -246,15 +246,14 @@ body {
     color: #ffffff;
 }
 
-/* =====================================================
+/*====================================================
    MOBILE OPTIMIZATION (READABILITY + SPACING)
    Affects: Entire website on screens < 768px
-===================================================== */
+=====================================================*/
 
 @media (max-width: 767px) {
 
     /* ---------- 1. GLOBAL TYPOGRAPHY ---------- */
-
     body {
         font-size: 16px;          /* base readable size */
         line-height: 1.6;         /* better readability */
@@ -283,7 +282,6 @@ body {
         padding: 10px 16px;
     }
 
-
     /* ---------- 2. CONTAINER & LAYOUT SPACING ---------- */
 
     /* Reduce default Bootstrap side padding */
@@ -306,7 +304,6 @@ body {
 
 
     /* ---------- 3. NAVBAR (OPTIONAL TIGHTENING) ---------- */
-
     .navbar {
         min-height: auto;  /* remove large desktop height */
     }
@@ -318,7 +315,6 @@ body {
 
 
     /* ---------- 4. SUSTAIN CARD (YOUR IMAGE + TEXT SECTION) ---------- */
-
     .sustain-card {
         min-height: auto; /* remove fixed height */
     }
@@ -341,15 +337,12 @@ body {
 
 
     /* ---------- 5. SCROLLING STRIP (IMPROVE FIT) ---------- */
-
     .scroll-item {
         width: 180px;
         margin: 0 15px;
     }
 
-
     /* ---------- 6. FOOTER IMPROVEMENT ---------- */
-
     .footer {
         font-size: 15px;
     }
